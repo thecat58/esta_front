@@ -1,39 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100% ;
+    font-size: 100%;
     vertical-align: baseline;
     font-family: 'Poppins', sans-serif;
+    
 }
-body{
+
+body {
     text-align: center;
     font-family: sans-serif;
-
-
 }
+
 .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* height: 63px; */
-    background: black ;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    height: 132px;
-
-
+    height: 108px;
+    background: #232424;
+    font-weight: 700;
 }
-.navbar{
+
+ul {
     display: flex;
-    margin-right: 10px;
-
 }
-.logo{
-    margin-left: 30px;
+
+li {
+    list-style: none;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: floralwhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: #fcf8f8; /* Cambia el color del texto al pasar el cursor sobre el enlace */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-bottom: 2px solid #ece4e4;
+}
+
+.logo img {
+    height: auto;
+    border-radius: 80%;
+    width: 45%;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
 }
 
 .logo a{
@@ -49,13 +72,8 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
-
-
-
 }
-.navbar a:hover {
-    background: paleturquoise;
-}
+
 .header{
     display: flex;
     justify-content: center;
@@ -68,7 +86,7 @@ body{
     background: rgb(255, 255, 255);
     display: flex;
     width: 100%;
-    height:600px;
+    height:1px;
     padding-top: 90px;
     background: url(/images/inicio/imgmovprst.png);
     background-size: contain;
