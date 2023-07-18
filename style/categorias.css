@@ -53,6 +53,11 @@ ul {
     text-transform: uppercase;
     font-size: 20px;
 }
+.navbar a:hover {
+    color: #fcf8f8; /* Cambia el color del texto al pasar el cursor sobre el enlace */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-bottom: 2px solid #ece4e4;
+}
 
 .header {
     display: flex;
