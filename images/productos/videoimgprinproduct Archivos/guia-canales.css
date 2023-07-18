@@ -1,0 +1,171 @@
+.section-channels{
+    background-image: url("/pages/persons/hogar/television/guia-canales/assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+   }
+  
+   .channels-tv__title,
+   .channels-tv__description {
+       color: #51535A;
+       text-align: center;
+       margin: 0;
+   }
+  
+   .channels-tv__title {
+       font-size: 26px;
+       font-weight: bold;
+   }
+   .channels-tv__description{
+    font-size: 24px;
+   }
+  
+   .channels-tv {
+       width: 100%;
+       max-width: 1200px;
+       color: #51535a;
+       padding: 30px 0;
+       margin: 0 auto;
+   }
+  
+   .channels-tv__container{
+   padding-top: 30px;
+   }
+  
+   .channel-tv__box {
+       /* width: 90%; */
+       max-width: 220px;
+       height: 79px;
+       background: #FFFFFF;
+       border-radius: 10px;
+       /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);*/
+       box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.12);
+       padding: 25px 0;
+       margin: 0 auto 20px;
+       display: flex !important;
+       align-items: center;
+       position: relative;
+       cursor: pointer;
+   }
+  
+   .channel-tv__icon {
+       margin: 0 20px 0 15px;
+   }
+  
+   .channel-tv__icon img {
+       width: 80px;
+       height: auto;
+       display: block;
+   }
+  
+   .channel-tv__text {
+       width: 100%;
+       padding-right: 10px;
+       position: relative;
+       text-align: center;
+   }
+  
+   /* .channel-tv__text::before {
+       content: '';
+       width: 1px;
+       height: 50px;
+       background: #85868a;
+       margin-top: -25px;
+       display: block;
+       position: absolute;
+       top: 50%;
+       left: 0;
+       opacity: .65;
+   } */
+  
+   .channel-tv__subtitle {
+       font-size: 17px;
+       font-weight: 300;
+   }
+  
+   .channel-tv__title {
+       color: #00a9e0;
+       font-size: 17px;
+       font-weight: bold;
+   }
+
+   .channels-tv__container-text{
+        width: 82%;
+        margin: 0 auto;
+   }
+  
+   @media only screen and (min-width: 768px) {
+       .channels-tv__title {
+           font-size: 30px;
+       }
+  
+       .channels-tv__title br {
+           display: none;
+       }
+  
+       .channels-tv__description {
+           font-size: 20px;
+       }
+  
+       .channel-tv__box {
+           /*width: 32%;*/
+           /*min-width: 290px;*/
+           margin: 10px auto;
+       }
+   }
+  
+   @media only screen and (min-width: 1100px) {
+        .channels-tv__container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 10px;
+            width: 500px;
+        }
+
+        .channels-tv{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            max-width: 1100px;
+        }
+
+        .channels-tv__title, 
+        .channels-tv__description{
+            text-align: left;
+        }
+
+        .channels-tv__description{
+            font-size: 26px;
+        }
+
+        .channel-tv__box{
+            min-width: 220px;
+        }
+
+        .channels-tv__container-text{
+            width: 50%;
+        }
+
+        .channels-tv__container{
+            padding: 30px 0;
+        }
+   }
+
+   /* @media only screen and (min-width: 1200px) {
+       .channels-tv__container {
+           max-width: 100%;
+           padding: 30px 10px 10px;
+           display: grid;
+           grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            grid-gap: 15px;
+       }
+  
+       .channel-tv__box {
+           width: 100%;
+           width: auto;
+           min-width: 290px;
+           margin: 0 auto;
+       }
+
+   } */

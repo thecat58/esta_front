@@ -1,0 +1,141 @@
+/*modal-paquetes*/
+.modal-paquetes {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1050;
+    display: none;
+}
+
+.modal-paquetes__container {
+    width: 90%;
+    max-width: 460px;
+    background: white;
+    margin: 5vh auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal-paquetes__close {
+    color: #7C8388;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.modal-paquetes__close:hover {
+    opacity: 1;
+}
+
+.modal-paquetes__header {
+    background: #00a9e0;
+    padding: 20px 5px;
+}
+
+.modal-paquetes__header--darkblue {
+    background: #1c2b3c;
+}
+
+.modal-paquetes__title {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.modal-paquetes__body {
+    height: fit-content;
+    max-height: 75vh;
+    overflow: auto;
+}
+
+.modal-paquetes__plan {
+    height: fit-content;
+    padding: 30px 20px 20px;
+}
+
+.modal-paquetes__plan-img,
+.modal-paquetes__plan-bullet {
+    width: 60%;
+    max-width: max-content;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.modal-paquetes__plan-img {
+    margin-bottom: 20px;
+}
+
+.modal-paquetes__plan-text {
+    color: #51535a;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.modal-paquetes__form {
+    background: #f4f4f4;
+}
+
+.modal-paquetes__iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 520px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.modal-paquetes__iframe iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-paquetes__container {
+    display: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.modal__button {
+    width: 100%;
+    max-width: 387px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    background: rgb(72, 196, 0);
+    padding: 8px;
+    border-radius: 8px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-paquetes__body {
+        display: flex;
+    }
+
+    .modal-paquetes__form {
+        overflow: hidden;
+    }
+
+
+    .modal-paquetes__iframe {
+        height: 485px;
+    }
+}

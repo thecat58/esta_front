@@ -1,0 +1,291 @@
+.btn-outline-secondary {
+  border-color: #0b2739;
+  color: #f8fcff;
+  border: 1px solid #000000;
+  cursor: pointer;
+  background-color: #009af1;
+}
+
+.btn-outline-secondary:hover {
+  border-color: #062e48;
+  background-color: #06659c;
+  color: #f2f6f8;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 10px 40px 10px 40px;
+}
+
+.buttons-banner .container-buttons .btn {
+  padding: 10px 20px 10px 20px;
+}
+
+/* ----------------------------------The Modal (background)------------------------------------- */
+.modalnew {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+
+.modalnew::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -0.05em;
+}
+
+/* Modal Content */
+.modalnew .modal-content {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 50px 10px 15px;
+  width: 98%;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  max-width: 1366px;
+  box-sizing: border-box;
+  background: rgba(11, 39, 57, 0.4);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  box-shadow: 35px 35px 70px #0b2739, -35px -35px 70px #0b2739;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+}
+
+/* The modal-content__Close Button */
+.modalnew .icon-remove {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  top: 10px;
+  right: 10px;
+  color: #009af1;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 26px;
+  -moz-border-radius: 26px;
+  -o-border-radius: 26px;
+  -ms-border-radius: 26px;
+  cursor: pointer;
+}
+
+.modalnew .icon-remove::before,
+.modalnew .icon-remove::after {
+  content: " ";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background: #f9f9fa;
+  margin: 3px 0 0;
+}
+
+.modalnew .icon-remove::before {
+  transform: rotate(45deg);
+  left: 13px;
+}
+
+.modalnew .icon-remove::after {
+  transform: rotate(-45deg);
+  right: 13px;
+}
+
+.modalnew .modal__title {
+  font-size: 2.5vw;
+  color: #ffffff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.modalnew .modal__posTitle {
+  font-weight: normal;
+  margin: 0 0 40px 0;
+  color: #ffffff;
+  font-size: 14px;
+  /* font-family: TelefonicaExtraLight; */
+}
+
+.modalnew .iframe {
+  position: relative;
+  max-width: 480px;
+  max-height: 156px;
+  z-index: 99;
+}
+
+.modalnew .form_call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+.modalnew .form_call input {
+  width: 250px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modalnew .form_call input::placeholder {
+  text-align: center;
+}
+
+.modalnew .form_call #MTotal_button_send {
+  background-color: #019df4;
+  padding: 7px 25px;
+  border: 0;
+  color: #ffffff;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.modalnew .form_call .message_success {
+  display: none;
+  background-color: #93d99c;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 1px solid #4ac959;
+  font-weight: bold;
+}
+
+.modalnew .form_call .message_error {
+  display: none;
+  background-color: #d88795;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 1px solid #cc2945;
+  font-weight: bold;
+}
+
+.container_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.container_btn a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.container_btn .btn-quiero {
+  width: 260px;
+  border-radius: 24px;
+  background-color: #5cb615;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.container_btn .btn-yasoy {
+  width: 260px;
+  border-radius: 24px;
+  background-color: #0b9df4;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.modalnew .modal__title {
+  font-size: 25px;
+}
+
+.modal-content .img-desk {
+  display: none;
+}
+
+.modal-content .img-mob {
+  display: block;
+  width: 100%;
+}
+
+.container-button {
+  width: 100%;
+  height: 200px;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .modalnew .modal-content {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 50px 10px 15px;
+    width: 98%;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    max-width: 1366px;
+    box-sizing: border-box;
+    background: rgba(11, 39, 57, 0.4);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    box-shadow: 35px 35px 70px #0b2739, -35px -35px 70px #0b2739;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+  }
+
+  .modalnew .modal__title {
+    font-size: 28px;
+  }
+
+  .modalnew .modal__posTitle {
+    font-size: 20px;
+  }
+
+  .container_btn .btn-quiero {
+    width: 285px;
+  }
+
+  .container_btn .btn-yasoy {
+    width: 285px;
+  }
+
+  .modal-content .img-desk {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    top: -110px;
+  }
+
+  .modal-content .img-mob {
+    display: none;
+  }
+
+}

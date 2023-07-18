@@ -1,0 +1,147 @@
+.section-franja {
+    padding:0;
+   }
+  
+   .franja {
+       width: 100%;
+       max-width: 1140px;
+       background: #003e60 url(/pages/persons/hogar/television/franja-app/assets/bg-franja.png) bottom/cover no-repeat;
+       padding: 25px 20px;
+    margin: 0 auto;
+   }
+  
+   .franja-play {
+    margin-bottom: 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+  
+   .franja-play__icon {
+       width: 70px;
+       margin-right: 20px;
+   }
+  
+   .franja-play__content {
+       color: #FFFFFF;
+   }
+  
+   .franja-play__title {
+       font-size: 20px;
+       font-weight: bold;
+       margin: 0 0 5px;
+   }
+  
+   .franja-play__descrip {
+    max-width: 300px;
+       font-size: 16px;
+   }
+  
+   .franja-play__descrip br{
+    display: none;
+   }
+  
+   .franja-shop__image {
+       width: 100%;
+       max-width: fit-content;
+       margin: 0 auto 10px;
+       display: block;
+   }
+  
+   .franja-shop__btn {
+       width: 254px;
+       color: #FFFFFF;
+       font-size: 20px;
+       font-weight: bold;
+       text-align: center;
+       background: #00a9e0;
+       padding: 10px;
+       border-radius: 50px;
+       margin: 0 auto;
+       display: block;
+       cursor: pointer;
+   }
+  
+   .franja-shop__stores{
+       width: 100%;
+    max-width: max-content;
+    margin: 0 auto;
+       display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .franja-shop__app{
+    flex: 1;
+       display: block;
+   }
+   .franja-shop__app img{
+       width: 100%;
+    max-width: max-content;
+       display: block;
+   }
+   .franja-tdt {
+    margin-top: 20px;
+}
+  
+   @media only screen and (min-width: 768px) {
+       .franja {
+           background: #003e60 url(/pages/persons/hogar/television/franja-app/assets/bg-franja-desk.png) right/cover no-repeat;
+           padding: 15px 20px 25px;
+           display: flex;
+           justify-content: space-around;
+     gap: 15px;
+       }
+  
+    .franja-play{
+     margin-bottom: 0;
+    }
+       .franja-play__title {
+           font-size: 23px;
+       }
+  
+       .franja-play__descrip {
+     max-width: max-content;
+           font-size: 18px;
+       }
+  
+       .franja-play__descrip br{
+           display: block;
+       }
+  
+       .franja-shop {
+           width: 40%;
+           max-width: fit-content;
+       }
+    .franja-shop__stores{
+     margin-bottom: 10px;
+    }
+
+    .franja-tdt {
+        text-align: center;
+        margin: auto;
+        padding-bottom: 40px;
+        margin-top: 20px;
+    }
+    }
+   
+  
+   @media only screen and (min-width: 1024px) {
+       .section-franja {
+           padding: 50px 30px;
+       }
+    .franja{
+           border-radius: 10px;
+    }
+  
+       .franja-play__icon {
+           width: auto;
+       }
+  
+       .franja-play__title {
+           font-size: 30px;
+       }
+  
+       .franja-play__descrip {
+           font-size: 20px;
+       }
+   }

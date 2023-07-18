@@ -1,0 +1,278 @@
+.modal-fibra {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1050;
+    display: none;
+  }
+  
+  .modal-fibra__close {
+    color: #7C8388;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 20px 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .5;
+    cursor: pointer;
+  }
+  
+  .modal-fibra__close:hover {
+    opacity: 1;
+  }
+  
+  /*Modal Parrillas*/
+  .modal-fibra__container {
+    width: 90%;
+    max-width: 500px;
+    height: 92%;
+    color: #50535a;
+    padding: 0 15px;
+    border-radius: 20px;
+    background: white;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: block;
+  }
+  
+  .modal-fibra__header {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .modal-fibra__header h3{
+    line-height: 5px;
+    font-weight: 500;
+  }
+  
+  .modal-fibra__title {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  .modal-fibra__body {
+    height: 85%;
+    overflow: auto;
+  }
+  
+  .modal-fibra-mb__acc-container {
+    width: 100%;
+    max-width: 380px;
+    margin: 10px auto;
+  }
+  
+  .accordion-btn {
+    width: 100%;
+    background: #019af1;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion-btn.active {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .accordion__container {
+    padding: 15px 40px 15px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .accordion__icon {
+    margin-right: 15px;
+  }
+  
+  .accordion__icon svg {
+    width: 27px;
+    fill: #FFFFFF;
+  }
+  
+  .accordion__title {
+    color: #FFFFFF;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: .9;
+    margin: 0;
+  }
+  
+  .accordion__arrow {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 16px;
+  }
+  
+  .accordion__arrow svg {
+    width: 20px;
+    fill: #FFF;
+    transform: rotate(0deg);
+  }
+  
+  .accordion-btn.active .accordion__arrow svg {
+    transform: rotate(180deg);
+  }
+  
+  .panel {
+    background: #FFF;
+    border: 1px solid #00a9e0;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    display: none;
+  }
+  
+  .panel__container {
+    padding: 30px 0;
+  }
+  
+  .modal-fibra-mb__channel-image {
+    width: 85%;
+    max-width: max-content;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .modal-fibra-mb__channel-content {
+    width: 70%;
+    max-width: fit-content;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .modal-fibra-mb__channel-text {
+    color: #00a9e0;
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  
+  .modal-fibra-mb__channel-plus {
+    width: 20px;
+    height: 20px;
+    background: url("https://movistar.co/documents/117302439/406531198/plus-catalogo.png/a43cd3f5-d4d7-e92d-1094-dc5c12d0d935?t=1588630206456") center/cover no-repeat;
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: -30px;
+  }
+  
+  .modal-fibra-desk {
+    display: none;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .modal-fibra__container {
+        max-width: max-content;
+        height: fit-content;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        margin-top: 50px;
+    }
+  
+    .modal-fibra__container .modal-fibra__close {
+        color: #00a9e0;
+    }
+  
+    .modal-fibra-mb {
+        display: none;
+    }
+  
+    .modal-fibra__title {
+        font-size: 25px;
+    }
+  
+    .modal-fibra-desk {
+        display: block;
+        border-radius: 20px;
+        border: 1px solid #00a9e0;
+        border-top: none;
+        overflow: hidden;
+    }
+  
+    .modal-fibra-desk__tabs {
+        width: 100%;
+        overflow: auto;
+        background: #00a9e0;
+    }
+  
+    .modal-fibra-desk__tabs-container {
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+  
+    .modal-fibra-desk__tablink {
+        color: #FFFFFF;
+        background: #00a9e0;
+        padding: 7px 15px;
+        border: none;
+        cursor: pointer;
+    }
+  
+    .modal-fibra-desk__tablink:hover {
+        opacity: .85;
+    }
+  
+    .modal-fibra-desk__tablink.active {
+        background: #e8e7e7;
+        color: #919191;
+    }
+  
+    .modal-fibra-desk__icon svg {
+        width: 20px;
+        fill: #FFFFFF;
+        margin: 0 auto 2px;
+        display: block;
+    }
+  
+    .modal-fibra-desk__tablink.active .modal-fibra-desk__icon svg {
+        fill: #919191;
+    }
+  
+    .modal-fibra-desk__title {
+        margin: 0;
+        font-size: 14px;
+    }
+  
+    .modal-fibra-desk__channel {
+        padding: 30px 10px;
+    }
+  
+    .modal-fibra-desk__channel-image {
+        margin: auto;
+        display: block;
+    }
+  
+    .modal-fibra-desk__tabcontent {
+        /*height: 250px;*/
+        display: none;
+    }
+  
+    .modal-fibra-desk__tabcontent#parrilla-fibra-tv__deportes {
+        display: block;
+    }
+  
+    .modal-fibra-desk__tabcontent-ctn {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+  
+    .modal-fibra-desk__tabcontent-ctn::after {
+        content: url("https://www.movistar.co/documents/117302439/406693738/fibra-tyc.png/f3c8cb75-2f4f-0233-1a91-9edd910a3ef9?t=1594762835896");
+        position: absolute;
+        bottom: 5px;
+        right: 15px;
+    }
+  }

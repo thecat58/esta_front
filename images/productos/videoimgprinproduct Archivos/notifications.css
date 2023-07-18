@@ -1,0 +1,193 @@
+.notification .badge,
+.icon-bell,
+.notification__megamenu .notification__megamenu-title{
+    display: none;
+}
+
+.notification__megamenu .c-submenu__list{
+    padding-top: 15px;
+}
+
+.notification__megamenu .c-submenu__list li{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.notification__megamenu .c-submenu__list li:last-child{
+    margin-bottom: 0;
+}
+
+.notification__megamenu .c-submenu__list li::before,
+.notification__megamenu .notification__megamenu-title::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    background-color: #86888c;
+}
+
+.notification__megamenu .c-submenu__list li img{
+    width: 40px;
+    height: 40px;
+}
+
+.notification__megamenu  .c-submenu__list .c-submenu__list-notification{
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.notification__megamenu .c-submenu__list .notification__title{
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.notification__megamenu .c-submenu__list .notification__info{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.notification__megamenu .c-submenu__list a{
+    font-size: 12px;
+    font-weight: 400;
+    color: #019df4;
+}
+
+.notificationMobile {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notificationMobile .badgeMobile {
+    display: none;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+
+.icon-bellMobile{
+    display: inline-block;
+    margin: 0px 10px;
+    width: 24px;
+    height: 24px;
+    background: url('/shared/notifications/assets/bell-regular.svg');
+}
+
+.notification .badge {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 13%;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@supports (-webkit-mask: url("")) or (mask: url("")) {
+    .icon-bellMobile {
+        -webkit-mask: url('/shared/notifications/assets/bell-regular.svg');
+        mask: url('/shared/notifications/assets/bell-regular.svg');
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        background: #86888c;
+    }
+}
+
+.c-main-menu__btn{
+    min-width: 100px;
+}
+
+@media screen and (min-width: 1250px) {
+
+    .notificationMobile,
+    .icon-bellMobile{
+        display: none;
+    }
+
+    .notification {
+        background-color: transparent;
+        color: white;
+        text-decoration: none;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .notification.c-main-menu__link::after {
+        display: none;
+    }
+
+    .notification__mobile{
+        display: none;
+    }
+
+    .notification .badge {
+        top: 8px;
+        right: 10px;
+        transform: none;
+    }
+    
+    .icon-bell{
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        background: url('/shared/notifications/assets/bell-regular.svg');
+    }
+    
+    @supports (-webkit-mask: url("")) or (mask: url("")) {
+        .icon-bell {
+            -webkit-mask: url('/shared/notifications/assets/bell-regular.svg');
+            mask: url('/shared/notifications/assets/bell-regular.svg');
+            mask-size: contain;
+            -webkit-mask-size: contain;
+            background: #86888c;
+        }
+    }
+    
+    .notification__megamenu .notification__megamenu-title{
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+        color: #86888c;
+        margin-bottom: 15px;
+        position: relative;
+    }
+
+    .notification__megamenu .c-submenu__list{
+        padding-top: 0;
+    }
+}

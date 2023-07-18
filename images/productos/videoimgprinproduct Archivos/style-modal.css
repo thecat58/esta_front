@@ -1,0 +1,119 @@
+.jquery-modal.blocker{
+    z-index: 9999;
+}
+
+.modal{
+    width: 100%;
+    max-width: 650px;
+    padding: 15px;
+}
+
+.modal.modal-mov-movistar{
+    max-width: 340px;
+    height: 560px;
+}
+
+/* tipo de boton para cerrar */
+.modal a.close-modal{
+    background-image: url(/components/modal/images/close-blue.png);
+}
+
+.modal.btn-darkBlue a.close-modal{
+    background-image: url(/components/modal/images/close-darkBlue.png);
+}
+
+.modal.btnInside-white a.close-modal{
+    background-image: url(/components/modal/images/closeInside-white.webp);
+    top: 12.5px;
+    right: 12.5px;
+}
+.modal.btnInside-darkBlue a.close-modal{
+    background-image: url(/components/modal/images/closeInside-darkBlue.webp);
+    top: 12.5px;
+    right: 12.5px;
+}
+.modal.btnInside-gray a.close-modal{
+    background-image: url(/components/modal/images/closeInside-gray.webp);
+    top: 12.5px;
+    right: 12.5px;
+}
+
+
+/* posicion del boton para cerra */
+
+.modal.btn-left a.close-modal{
+    left: -12.5px;
+    right: auto;
+}
+.modal.btn-left.btnInside-white a.close-modal{
+    top: 12.5px;
+    left: 12.5px;
+    right: auto;
+}
+
+.modal.btn-down a.close-modal{
+    top: auto;
+    left: 50%;
+    right: auto;
+    bottom: -15px;
+    transform: translateX(-30px);
+}
+
+
+.modal .modal-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-content{
+    width: 100%;
+}
+
+.modal .title{
+    font-size: 5.4vw;
+    line-height: normal;
+}
+
+.modal .messages{
+    font-size: 4.7vw;
+    line-height: normal;
+    margin: 20px 0 30px;
+}
+
+.modal .iframe-content{
+    max-width: 280px;
+    height: 95px;
+    margin: 10px auto;
+}
+
+.modal .call-content{
+    max-width: 280px;
+    height: 85px;
+    margin: 10px auto;
+}
+
+@media screen and (min-width: 500px) {
+    .modal{
+        width: 90%;
+        padding: 15px 30px;
+    }
+
+    .modal.modal-mov-movistar{
+        max-width: 890px;
+        height: 400px;
+    }
+
+    .modal .modal-content{
+        width: 90%;
+    }
+
+    .modal .title{
+        font-size: 30px;
+    }
+    .modal .messages{
+        font-size: 20px;
+    }
+}

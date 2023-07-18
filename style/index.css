@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 108px;
+    background: #232424;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: floralwhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.logo img {
+  
+    height: auto;
+    border-radius: 80%;
+    width: 45%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+video {
+    width: 99%;
+    height: auto;
+}
+
+.tittle {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(16, 16, 17);
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid palevioletred;
+    color: aliceblue;
+    text-decoration: none;
+    background: black;
+}
+
+.btn:hover {
+    background: none;
+}
+/* este es de las targetas giratorias */
+.content-sau {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    background: papayawhip;
+}
+
+.sau {
+    padding: 100px;
+    background: white;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: white;
+    margin: 0 80px;
+}
+
+.box-container .box1,
+.box-container .box2,
+.box-container .box3 {
+    height: 270px;
+    width: 270px;
+    background-image: url('/images/inicio/taller1.jpg');
+    background-size: cover;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1.9s;
+}
+
+.box-container .box1:hover,
+.box-container .box2:hover,
+.box-container .box3:hover {
+    transform: rotateY(180deg);
+}
+
+.box-container .box1:after,
+.box-container .box2:after,
+.box-container .box3:after {
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    backface-visibility: hidden;
+}
+
+.box-container .box1:after {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    transform: rotateY(180deg);
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    z-index: 1;
+    text-align: left;
+    content: "Taller de Fotografía Creativa: Descubre tu lado artístico a través de la fotografía. Aprende técnicas y trucos para capturar imágenes impactantes, jugar con la luz y la composición, y expresar tu visión personal a través de la fotografía.";
+
+}
+
+.box-container .box2:after {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    transform: rotateY(180deg);
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    z-index: 1;
+    text-align: left;
+    content: "Taller de Fotografía Creativa: Descubre tu lado artístico a través de la fotografía. Aprende técnicas y trucos para capturar imágenes impactantes, jugar con la luz y la composición, y expresar tu visión personal a través de la fotografía.";
+}
+
+
+.box-container .box3:after {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    transform: rotateY(180deg);
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    z-index: 1;
+    text-align: left;
+    content: "Taller de Fotografía Creativa: Descubre tu lado artístico a través de la fotografía. Aprende técnicas y trucos para capturar imágenes impactantes, jugar con la luz y la composición, y expresar tu visión personal a través de la fotografía.";
+}
+
+.box-container .box2 {
+    height: 270px;
+    width: 270px;
+    background-image: url(/images/inicio/taller2.jpg);
+    background-size: cover;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px black (0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+.box-container .box3 img {
+    height: 270px;
+    width: 270px;
+    background-image: url(/images/inicio/taller3.jpg);
+    background-size: cover;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px black (0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+
+.box4 img {
+    height: 270px;
+    width: 270px;
+    background-size: cover;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 5px black (0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+.box-container .box i {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: rgb(235, 224, 224);
+    background: pink;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: palevioletred;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+/* hast aqui no mas */
+.price {
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+article.contain {
+    background: white;
+}
+
+.contact {
+    padding: 50px 0;
+    background: #171717;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.footer-section {
+    display: flex;
+    text-align: center;
+}
+
+.f-enlaces {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+.f-enlaces a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .tittle {
+        margin-bottom: 0px;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 80vh;
+        padding: 50px 0;
+    }
+
+    .about {
+        height: 80vh;
+        padding: 50px 0;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .f-enlaces {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+/*---------------------------Aquí debajo va el FOOTER-----------------------*/
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../Images/background-footer.svg);
+    background-size: cover;
+}
+
+.container__footer {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img {
+    width: 180px;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+}
+
+.box__footer a .fab {
+    font-size: 20px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+.box__footer p {
+    color: #7a7a7a;
+}
+
+.box__footer i {
+    color: #7a7a7a;
+}
+
+/*---------------------------Aquí termina el FOOTER-----------------------*/

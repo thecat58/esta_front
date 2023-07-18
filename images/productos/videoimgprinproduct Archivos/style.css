@@ -1,0 +1,20 @@
+h3{
+    padding: 20px 40px;
+    color: #51535A;
+    text-align: center;
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .videos{
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,354 @@
+.max-width {
+    max-width: max-content;
+}
+
+/* BODY */
+.home-body {
+    background: var(--bg-lightGray);
+}
+
+/* COLORS */
+.color-white {
+    color: var(--white) !important;
+}
+
+.color-black {
+    color: var(--black) !important;
+}
+
+.color-blue {
+    color: var(--blue) !important;
+}
+
+.color-darkBlue {
+    color: var(--darkBlue) !important;
+}
+
+.color-gray {
+    color: var(--gray) !important;
+}
+
+.color-lightGray {
+    color: var(--lightGray) !important;
+}
+
+.color-green {
+    color: var(--green) !important;
+}
+
+/* FONTS */
+.ff-telefonica {
+    font-family: var(--f1);
+}
+
+.ff-ico-mov {
+    font-family: var(--f2);
+}
+
+/* FONT WEIGHT */
+.fw-extra-light {
+    font-weight: 200;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+/* FONT STYLE */
+.fs-italic {
+    font-style: italic;
+}
+
+.fs-normal {
+    font-style: normal;
+}
+
+.fs-oblique {
+    font-style: oblique;
+}
+
+/* BACKGROUND COLORS */
+.bg-white {
+    background-color: var(--white) !important;
+}
+
+.bg-blue {
+    background-color: var(--blue) !important;
+}
+
+.bg-blue2 {
+    background-color: var(--blue2) !important;
+}
+
+.bg-darkBlue {
+    background-color: var(--darkBlue) !important;
+}
+
+.bg-green {
+    background-color: var(--green) !important;
+}
+.bg-yellow {
+    background-color: var(--yellow) !important;
+}
+
+.bg-greenTag {
+    background-color: var(--greenTag) !important;
+}
+
+.bg-grayLight {
+    background-color: var(--bg-lightGray) !important;
+}
+
+.bg-body-gray {
+    background-color: #f5f5f5 !important;
+}
+
+.bg-darkBlue-borderWhite{
+    background-color: var(--darkBlue) !important;
+    border: 1px solid var(--white) !important;
+}
+
+/* CURSOR */
+.cursor {
+    cursor: pointer;
+}
+
+/* BUTTONS */
+.m-button {
+    width: 100%;
+    max-width: 170px;
+    min-width: 170px;
+    height: 40px;
+    color: #FFF;
+    font-size: 12px;
+    background: var(--blue);
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    line-height: 18px;
+}
+
+.m-button::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: center/cover no-repeat;
+    position: absolute;
+    left: 15px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .m-button {
+        font-size: 14px;
+    }
+}
+
+/* BUTTON ICONS */
+.m-button--i-phone::before {
+    background-image: url(/pages/persons/home/carrusel/assets/img/icon_call.png);
+}
+
+.m-button--i-shop::before {
+    background-image: url(/pages/persons/home/carrusel/assets/img/icon_shop_white.png);
+}
+
+.m-button--white.m-button--i-phone::before {
+    background-image: url(/pages/persons/home/carrusel/assets/img/icon-call-lightblue.png);
+}
+
+.m-button--white.m-button--i-shop::before {
+    background-image: url(/pages/persons/home/carrusel/assets/img/icon_shop-lightBlue.png);
+}
+
+.m-button--white-darkblue.m-button--i-phone::before {
+    background-image: url(/pages/persons/home/carrusel/assets/img/icon_call-darkBlue.png);
+}
+
+.m-button--white-darkblue.m-button--i-shop::before {
+    background-image: url(/pages/persons/home/carrusel/assets/img/icon_shop-darkBlue.png);
+}
+
+/* BUTTON SIZES */
+.m-button--small {
+    width: 40px;
+    min-width: 40px;
+    padding: 0;
+}
+
+/* BUTTON COLORS */
+.m-button--darkblue {
+    background: var(--darkBlue);
+}
+
+.m-button--green {
+    background: var(--green);
+}
+
+.m-button--white {
+    color: var(--blue);
+    background: var(--white);
+}
+
+.m-button--white-darkblue {
+    color: var(--darkBlue);
+    background: var(--white);
+}
+
+/* BUTTON BORDER */
+.m-button--border {
+    border: 1px solid;
+}
+
+.border-white {
+    border: 1px solid var(--white);
+}
+
+.border-blue {
+    border: 1px solid var(--blue);
+}
+
+.border-darkBlue {
+    border: 1px solid var(--darkBlue);
+}
+
+/* POSITION */
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.p-fixed {
+    position: fixed;
+}
+
+.p-static {
+    position: static;
+}
+
+/* DISPLAY */
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+/* FLEX BOX */
+.flex-vertical {
+    flex-direction: column;
+}
+
+.flex-horizontal {
+    flex-direction: row;
+}
+
+.flex-top-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-top-center {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex-top-right {
+    justify-content: right;
+    align-items: flex-start;
+}
+
+.flex-center-left {
+    justify-content: left;
+    align-items: center;
+}
+
+.flex-center-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-right {
+    justify-content: right;
+    align-items: center;
+}
+
+.flex-bottom-left {
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.flex-bottom-center {
+    justify-content: left;
+    align-items: flex-end;
+}
+
+.flex-bottom-right {
+    justify-content: left;
+    align-items: flex-end;
+}
+
+/* TEXT */
+.t-center {
+    text-align: center;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.t-justify {
+    text-align: justify;
+}
+
+/* falta por definir */
+.i-arrow {
+    content: url(/pages/persons/home/carousel/images/i-arrow.png);
+}
+
+.i-arrow-blue {
+    content: url(/pages/persons/home/carousel/images/i-arrow-blue.png);
+}
+
+/* Animation */
+.kindanimated[data-animate^="fade"]:not([data-animate-on-secuency]):not([data-animate-on-slider]) {
+    opacity: 0;
+}
+
+/* imagen responsive */
+.img-resp {
+    max-width: 100%;
+    height: auto;
+}

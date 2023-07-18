@@ -1,0 +1,327 @@
+.callback-sencillo {
+    display: block;
+    position: relative;
+    padding-top: 3px;
+    margin: 0 8px 0;
+    min-height: 75px;
+}
+
+.callback-sencillo .input-form {
+    position: relative;
+    display: block;
+    float: left;
+    line-height: 40px;
+    border-radius: 1.5rem 0 0 1.5rem;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    text-align: center
+}
+
+.callback-sencillo .input-form-normal {
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    border-radius: 1.5rem;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.callback-sencillo .input-form.error ,
+.callback-sencillo .input-form-normal.error {
+    border: 1px solid #E63780;
+}
+
+.callback-sencillo a {
+    color: inherit;
+}
+
+.callback-sencillo .icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    transition: all .3s ease;
+}
+
+.callback-sencillo .btn-default {
+    box-shadow: none;
+    border: none;
+}
+
+.callback-sencillo .btn-default.error {
+    background-color: #E63780 !important;
+    border: #E63780 !important;
+    color: white !important;
+}
+
+.callback-sencillo .curtain {
+    position: absolute;
+    z-index: 10;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 1.5rem;
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background-color: #fff;
+}
+
+.callback-sencillo .curtain.horizTranslate {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    width: 0%;
+    background-color: white;
+    opacity: 0;
+}
+
+.callback-sencillo .botonEnviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 0 1.5rem 1.5rem 0;
+    float: left;
+    height: 40px;
+    font-size: 18px;
+    line-height: 16px;
+    color: #FFF;
+    font-weight: 300;
+    z-index: 4;
+}
+
+.callback-sencillo .botonEnviarNormal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 1.5rem;
+    margin-top: 12px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 16px;
+    color: #FFF;
+    font-weight: 300;
+}
+
+.callback-sencillo .botonEnviar.bg-darkBlue:disabled,
+.callback-sencillo .botonEnviar.bg-darkBlue[disabled] {
+    background-color: #445f7d !important;
+    border: 1px solid #445f7d;
+    cursor: unset;
+}
+
+.callback-sencillo .botonEnviar.bg-blue:disabled,
+.callback-sencillo .botonEnviar.bg-blue[disabled] {
+    background-color: #b6d2ef !important;
+    border: 1px solid #b6d2ef;
+    cursor: unset;
+}
+
+.callback-sencillo .botonEnviar.bg-green:disabled,
+.callback-sencillo .botonEnviar.bg-green[disabled] {
+    background-color: #a7dc79 !important;
+    border: 1px solid #a7dc79;
+    cursor: unset;
+}
+
+.callback-sencillo .callback-content-normal {
+    padding: 0 4x;
+}
+
+.callback-sencillo .callback-content {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.callback-sencillo .callback-box__check {
+    display: none;
+    grid-column: span 2;
+    padding: 0 0 0 6px;
+}
+
+.callback-sencillo .callback-box__check.active {
+    display: block !important;
+}
+
+.callback-sencillo .content-check {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .1s ease-in-out;
+}
+
+.callback-sencillo .content-check.check-normal {
+    font-size: 11px;
+}
+
+.callback-sencillo .callback-box__check input {
+    display: none;
+    font-weight: 300;
+}
+
+.callback-sencillo .callback-box__check label .icon-check {
+    /* content: " "; */
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    margin: 1px 2px 0 0;
+    width: 14px;
+    height: 14px;
+    border-radius: 11px;
+    border: 2px solid #d3d7cf;
+    background-color: #fff;
+}
+
+.callback-sencillo .callback-box__check input:checked+label .icon-check {
+    border: 2px solid #019DF4;
+}
+
+.callback-sencillo .callback-box__check input:checked+label .icon-check:after {
+    content: " ";
+    display: block;
+    border-radius: 11px;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #019DF4;
+    border-color: #019DF4;
+}
+
+.callback-sencillo .callback-box__check input:disabled {
+    background-color: #019DF4;
+}
+
+.callback-sencillo .callback-box__check label.txt_check {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;
+    font-weight: 300;
+    color: #000;
+    text-align: left;
+}
+
+.callback-sencillo .callback-box__check label.txt_check a {
+    text-decoration: none !important;
+    color: currentColor;
+    font-family: inherit !important;
+    font-size: inherit !important;
+}
+
+
+.callback-sencillo .icon-phone {
+    -webkit-mask: url(../images/icon-phone.svg) no-repeat 100% 100%;
+    mask: url(../images/icon-phone.svg) no-repeat 100% 100%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    margin-right: 12px;
+}
+
+.callback-sencillo .icon-spinner {
+    -webkit-mask: url(../images/icon-spinner.svg) no-repeat 100% 100%;
+    mask: url(../images/icon-spinner.svg) no-repeat 100% 100%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    height: 24px;
+    width: 24px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+.callback-sencillo .icon-btn {
+    -webkit-mask: url(../images/icono-btn.svg) no-repeat center center;
+    mask: url(../images/icono-btn.svg) no-repeat center center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    display: block;
+}
+
+.callback-sencillo .btn-default.bg-darkBlue .icon-send {
+    background: url(../images/icono-success-whiteDarkBlue.svg) no-repeat center center;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    margin-right: 12px;
+}
+.callback-sencillo .btn-default.bg-green .icon-send {
+    background: url(../images/icono-success-green.svg) no-repeat center center;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    margin-right: 12px;
+}
+
+.callback-sencillo .btn-default.bg-white.color-blue .icon-send,
+.callback-sencillo .btn-default.bg-blue .icon-send{
+    background: url(../images/icono-success-whiteBlue.svg) no-repeat center center;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    margin-right: 12px;
+}
+
+
+.callback-sencillo .btn-default.bg-white.color-darkBlue .icon-send {
+    background: url(../images/icono-success-darkBlue.svg) no-repeat center center;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+    margin-right: 12px;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* datapicker */
+
+.dtpicker-cont {
+    border: none !important;
+}
+
+.dtpicker-content {
+    max-height: fit-content !important;
+}
+
+.swal2-container{
+    z-index: 10010 !important;
+}

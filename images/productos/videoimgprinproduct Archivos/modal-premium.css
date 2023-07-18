@@ -1,0 +1,301 @@
+/*modal-premium*/
+.modal-premium {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1050;
+    display: none;
+  }
+
+  .modal-premium__close {
+    color: #7c8388;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 20px 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  .modal-premium__close:hover {
+    opacity: 1;
+  }
+
+  /*Modal Parrillas*/
+  .modal-premium__container {
+    width: 90%;
+    max-width: 500px;
+    height: 75%;
+    color: #50535a;
+    padding: 0 15px 15px;
+    border-radius: 20px;
+    background: white;
+    margin: 50px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: block;
+  }
+
+  .modal-premium__header {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .modal-premium__title {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .modal-premium__body {
+    height: 85%;
+    padding-bottom: 20px;
+    overflow: auto;
+  }
+
+  .modal-premium-mb__acc-container {
+    width: 100%;
+    max-width: 380px;
+    margin: 10px auto;
+  }
+
+  .accordion-btn {
+    width: 100%;
+    background: #019af1;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .accordion-btn.active {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .accordion__container {
+    padding: 15px 40px 15px 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .accordion__icon {
+    margin-right: 15px;
+  }
+
+  .accordion__icon svg {
+    width: 27px;
+    fill: #ffffff;
+  }
+
+  .accordion__title {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 0.9;
+    margin: 0;
+  }
+
+  .accordion__arrow {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 16px;
+  }
+
+  .accordion__arrow svg {
+    width: 20px;
+    fill: #fff;
+    transform: rotate(0deg);
+  }
+
+  .accordion-btn.active .accordion__arrow svg {
+    transform: rotate(180deg);
+  }
+
+  .panel {
+    background: #fff;
+    border: 1px solid #00a9e0;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    display: none;
+  }
+
+  .panel__container {
+    padding: 30px 0;
+  }
+
+  .modal-premium-mb__channel-image {
+    width: 85%;
+    max-width: max-content;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .modal-premium-mb__channel-content {
+    width: 70%;
+    max-width: fit-content;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .modal-premium-mb__channel-text {
+    color: #00a9e0;
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+
+  .modal-premium-mb__channel-plus {
+    width: 20px;
+    height: 20px;
+    background: url(/pages/persons/hogar/television/modals/modal-premium/assets/plus-catalogo.png)
+      center/cover no-repeat;
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: -30px;
+  }
+
+  .modal-premium-desk {
+    display: none;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .modal-premium__container {
+      max-width: max-content;
+      height: fit-content;
+      border-radius: 10px;
+      padding-bottom: 20px;
+      margin-top: 50px;
+    }
+
+    .modal-premium__container .modal-premium__close {
+      color: #00a9e0;
+    }
+
+    .modal-premium-mb {
+      display: none;
+    }
+
+    .modal-premium__title {
+      font-size: 25px;
+    }
+
+    .modal-premium-desk {
+      display: block;
+      border-radius: 20px;
+      border: 1px solid #00a9e0;
+      border-top: none;
+      overflow: hidden;
+    }
+
+    .modal-premium-desk__tabs {
+      width: 100%;
+      overflow: auto;
+      background: #00a9e0;
+    }
+
+    .modal-premium-desk__tabs-container {
+      width: max-content;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    .modal-premium-desk__tablink {
+      color: #ffffff;
+      background: #00a9e0;
+      padding: 20px 28px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .modal-premium-desk__tablink:hover {
+      opacity: 0.85;
+    }
+
+    .modal-premium-desk__tablink.active {
+      background: #e8e7e7;
+      color: #919191;
+    }
+
+    .modal-premium-desk__tablink--row {
+      display: flex;
+      align-items: center;
+    }
+
+    .modal-premium-desk__tablink--row .modal-premium-desk__icon {
+      margin-right: 5px;
+    }
+
+    .modal-premium-desk__icon svg {
+      width: 20px;
+      fill: #ffffff;
+      margin: 0 auto 2px;
+      display: block;
+    }
+
+    .modal-premium-desk__tablink.active .modal-premium-desk__icon svg {
+      fill: #919191;
+    }
+
+    .modal-premium-desk__title {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .modal-premium-desk__channel {
+      padding: 30px 10px;
+    }
+
+    .modal-premium-desk__channel-image {
+      width: 80%;
+      max-width: max-content;
+      margin: auto;
+      display: block;
+    }
+
+    .modal-premium-desk__tabcontent {
+      /*height: 250px;*/
+      height: 300px;
+      display: none;
+    }
+
+    .modal-premium-desk__tabcontent#parrilla-premium__hbo_premium {
+      display: block;
+    }
+
+    .modal-premium-desk__tabcontent-ctn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-premium-desk__channel-content {
+      position: relative;
+    }
+
+    .modal-premium-desk__channel-text {
+      color: #00a9e0;
+      font-size: 22px;
+      margin: 0 0 10px;
+    }
+
+    .modal-premium-desk__channel-plus {
+      width: 20px;
+      height: 20px;
+      background: url(/pages/persons/hogar/television/modals/modal-premium/assets/plus-catalogo.png)
+        center/cover no-repeat;
+      display: block;
+      position: absolute;
+      top: 80px;
+      left: -30px;
+    }
+  }

@@ -1,0 +1,304 @@
+.modal-movistarPlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1050;
+    display: none;
+  }
+  
+  .modal-movistarPlay__container {
+    width: 90%;
+    max-width: 500px;
+    height: 92%;
+    padding: 10px;
+    border-radius: 20px;
+    background: white;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    position: relative
+  }
+  
+  .modal-movistarPlay__close {
+    color: #7C8388;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    padding: 7px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .5;
+    cursor: pointer
+  }
+  
+  .modal-movistarPlay__close:hover {
+    opacity: 1
+  }
+  
+  .modal-movistarPlay__container {
+    width: 90%;
+    max-width: 500px;
+    height: 92%;
+    color: #50535a;
+    padding: 0 15px;
+    border-radius: 20px;
+    background: white;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: block;
+    overflow: hidden
+  }
+  
+  .modal-movistarPlay__header {
+    max-width: 950px;
+    text-align: center;
+    padding: 20px 0 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .modal-movistarPlay__title {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0
+  }
+  
+  .modal-movistarPlay__tablink,
+  .modal-movistarPlay__tablink:focus,
+  .modal-movistarPlay__tablink:active {
+    width: 46%;
+    color: #00a9e0;
+    font-size: 15px;
+    font-weight: 300;
+    background: #ffffff;
+    padding: 7px;
+    border: 1px solid #00a9e0;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer
+  }
+  
+  .modal-movistarPlay__tablink.active {
+    background: #00a9e0;
+    border: 1px solid #00a9e0;
+    color: #FFF
+  }
+  
+  .modal-movistarPlay__body {
+    height: 66%;
+    overflow: auto
+  }
+  
+  .modal-movistarPlay__tabcontent {
+    display: none
+  }
+  
+  #movistarPlay-canales {
+    display: block
+  }
+  
+  .modal-movistarPlay-mb__acc-container {
+    width: 100%;
+    max-width: 380px;
+    margin: 10px auto
+  }
+  
+  .accordionPlay-btn {
+    width: 100%;
+    background: #019af1;
+    border-radius: 10px;
+    cursor: pointer
+  }
+  
+  .accordionPlay-btn.active {
+    border-radius: 10px 10px 0 0
+  }
+  
+  .accordionPlay__container {
+    padding: 15px 40px 15px 20px;
+    display: flex;
+    align-items: center;
+    position: relative
+  }
+  
+  .accordionPlay__icon {
+    margin-right: 15px
+  }
+  
+  .accordionPlay__icon img {
+    width: 27px
+  }
+  
+  .accordionPlay__title {
+    color: #FFF;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: .9;
+    margin: 0
+  }
+  
+  .accordionPlay__arrow {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 16px
+  }
+  
+  .accordionPlay__arrow img {
+    width: 20px;
+    transform: rotate(0deg)
+  }
+  
+  .accordionPlay-btn.active .accordionPlay__arrow img {
+    transform: rotate(180deg)
+  }
+  
+  .panel {
+    background: #FFF;
+    border: 1px solid #00a9e0;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    display: none
+  }
+  
+  .panel.active {
+    display: block;
+  }
+  
+  .panel__container {
+    padding: 30px 0
+  }
+  
+  .modal-movistarPlay-mb__channel-image {
+    width: 85%;
+    max-width: max-content;
+    margin: 0 auto;
+    display: block
+  }
+  
+  .modal-movistarPlay-desk {
+    display: none
+  }
+  
+  @media only screen and (min-width: 456px) {
+  
+    .modal-movistarPlay__tablink,
+    .modal-movistarPlay__tablink:focus,
+    .modal-movistarPlay__tablink:active {
+        width: 180px;
+        font-size: 17px;
+        border: 1px solid #00a9e0;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .modal-movistarPlay__container {
+        max-width: max-content;
+        height: fit-content;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        margin-top: 50px
+    }
+  
+    .modal-movistarPlay__container .modal-movistarPlay__close {
+        color: #00a9e0
+    }
+  
+    .modal-movistarPlay-mb {
+        display: none
+    }
+  
+    .modal-movistarPlay__title {
+        font-size: 25px
+    }
+  
+    .modal-movistarPlay-desk {
+        display: block;
+        border-radius: 20px;
+        border: 1px solid #00a9e0;
+        border-top: none;
+        overflow: hidden
+    }
+  
+    .modal-movistarPlay-desk__tabs {
+        width: 100%;
+        overflow: auto;
+        background: #00a9e0
+    }
+  
+    .modal-movistarPlay-desk__tabs-container {
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto
+    }
+  
+    .modal-movistarPlay-desk__tab {
+        color: #FFF;
+        background: #00a9e0;
+        padding: 7px 15px;
+        border: none;
+        cursor: pointer
+    }
+  
+    .modal-movistarPlay-desk__tab:hover {
+        opacity: .85
+    }
+  
+    .modal-movistarPlay-desk__tab.active {
+        background: #ffffff;
+        color: #00a9e0;
+    }
+  
+    .modal-movistarPlay-desk__icon svg {
+        width: 20px;
+        fill: #FFF;
+        margin: 0 auto 2px;
+        display: block
+    }
+  
+    .modal-movistarPlay-desk__tab.active .modal-movistarPlay-desk__icon svg {
+        fill: #00a9e0;
+    }
+  
+    .modal-movistarPlay-desk__title {
+        margin: 0;
+        font-size: 14px
+    }
+  
+    .modal-movistarPlay-desk__channel {
+        padding: 30px 10px
+    }
+  
+    .modal-movistarPlay-desk__channel-image {
+        margin: auto;
+        display: block
+    }
+  
+    .modal-movistarPlay-desk__tabcontent {
+        display: none;
+    }
+  
+    .modal-movistarPlay-desk__tabcontent#parrilla-canales__series,
+    .modal-movistarPlay-desk__tabcontent#parrilla-canales-plus__series,
+    .modal-movistarPlay-desk__tabcontent#parrilla-play-lite__deportes,
+    .modal-movistarPlay-desk__tabcontent#parrilla-full-canales__deportes,
+    .modal-movistarPlay-desk__tabcontent#parrilla-canales__nacionales {
+        display: block;
+    }
+  
+    .modal-movistarPlay-desk__tabcontent-ctn {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+  }

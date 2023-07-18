@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Telefonica";
+  src: url("../fonts_movistar/Telefonica-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts_movistar/Telefonica-Regular.woff2") format("woff2"), url("../fonts_movistar/Telefonica-Regular.woff") format("woff"), url("../fonts_movistar/Telefonica-Regular.ttf") format("truetype"), url("../fonts_movistar/Telefonica-Regular.svg#Telefonica-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Telefonica";
+  src: url("../fonts_movistar/Telefonica-Light.eot?#iefix") format("embedded-opentype"), url("../fonts_movistar/Telefonica-Light.woff2") format("woff2"), url("../fonts_movistar/Telefonica-Light.woff") format("woff"), url("../fonts_movistar/Telefonica-Light.ttf") format("truetype"), url("../fonts_movistar/Telefonica-Light.svg#Telefonica-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Telefonica";
+  src: url("../fonts_movistar/Telefonica-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts_movistar/Telefonica-Bold.woff2") format("woff2"), url("../fonts_movistar/Telefonica-Bold.woff") format("woff"), url("../fonts_movistar/Telefonica-Bold.ttf") format("truetype"), url("../fonts_movistar/Telefonica-Bold.svg#Telefonica-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Guthen-bloots";
+  src: url("../fonts_movistar/Guthen-Bloots-Font/OTF/Guthen Bloots Basic.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ico-movistar";
+  src: url("../fonts/ico-movistar.eot?9m8kyr#iefix") format("embedded-opentype"), url("../fonts/ico-movistar.ttf?9m8kyr") format("truetype"), url("../fonts/ico-movistar.woff?9m8kyr") format("woff"), url("../fonts/ico-movistar.svg?9m8kyr#ico-movistar") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ico-logos-movistar';
+  src: url('../fonts/ico-logos-movistar.eot?4xu1yx#iefix') format('embedded-opentype'), url('../fonts/ico-logos-movistar.ttf?4xu1yx') format('truetype'), url('../fonts/ico-logos-movistar.woff?4xu1yx') format('woff'), url('../fonts/ico-logos-movistar.svg?4xu1yx#ico-logos-movistar') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ====== Fuentes Innecesarias  ======== */
+/* @font-face {
+  font-family: "Telefonica-italic";
+  src: url("../fonts_movistar/Telefonica-RegularItalic.eot");
+  src: url("../fonts_movistar/Telefonica-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts_movistar/Telefonica-RegularItalic.woff2") format("woff2"), url("../fonts_movistar/Telefonica-RegularItalic.woff") format("woff"), url("../fonts_movistar/Telefonica-RegularItalic.ttf") format("truetype"), url("../fonts_movistar/Telefonica-RegularItalic.svg#Telefonica-RegularItalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+} */
+
+/* @font-face {
+  font-family: "Telefonica-extraLight";
+  src: url("../fonts_movistar/Telefonica-ExtraLight.eot");
+  src: url("../fonts_movistar/Telefonica-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts_movistar/Telefonica-ExtraLight.woff2") format("woff2"), url("../fonts_movistar/Telefonica-ExtraLight.woff") format("woff"), url("../fonts_movistar/Telefonica-ExtraLight.ttf") format("truetype"), url("../fonts_movistar/Telefonica-ExtraLight.svg#Telefonica-ExtraLight") format("svg");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* @font-face {
+  font-family: "Telefonica-cap-regular";
+  src: url("../fonts_movistar/TelefonicaCap-Regular.eot");
+  src: url("../fonts_movistar/TelefonicaCap-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts_movistar/TelefonicaCap-Regular.woff2") format("woff2"), url("../fonts_movistar/TelefonicaCap-Regular.woff") format("woff"), url("../fonts_movistar/TelefonicaCap-Regular.ttf") format("truetype"), url("../fonts_movistar/TelefonicaCap-Regular.svg#TelefonicaCap-Regular") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+} */

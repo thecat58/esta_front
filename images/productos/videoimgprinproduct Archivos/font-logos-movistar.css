@@ -1,0 +1,230 @@
+  .glyph-:before,
+  [class^=glyph-]:before,
+  [class*=" glyph-"]:before,
+  .ag-o-ico:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'ico-logos-movistar' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .glyph-after-:after,
+  [class^=glyph-after-]:after,
+  [class*=glyph-after-]:after {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "ico-logos-movistar" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /*
+  * @icon .glyph-apple
+  * @markup
+  *   <span class="glyph-apple"></span>
+  */
+  .glyph-apple:before {
+    content: "\e901";
+  }
+
+  /*
+  * @icon .glyph-lg
+  * @markup
+  *   <span class="glyph-lg"></span>
+  */
+  .glyph-lg:before {
+    content: "\e902";
+  }
+
+  /*
+  * @icon .glyph-amazon-prime
+  * @markup
+  *   <span class="glyph-amazon-prime"></span>
+  */
+  /* .glyph-amazon-prime:before {
+    content: "\e900";
+  } */
+  .glyph-amazon-prime:before {
+    content: url("/pages/persons/hogar/fibra/escaleras/escaleras-trio/assets/Prime_VIdeo_Logo_Dark_Blue.svg");
+    filter: opacity(0.7);
+    -webkit-filter: opacity(0.7);
+  }
+
+  .glyph-amazon-prime:hover:before {
+    filter: opacity(1);
+    -webkit-filter: opacity(1);
+  }
+
+  /*
+  * @icon .glyph-hbo
+  * @markup
+  *   <span class="i-hbo"></span>
+  */
+  .glyph-hbo:before {
+    content: "\f900";
+  }
+
+  /*
+  * @icon .glyph-win-sports
+  * @markup
+  *   <span class="i-win-sports"></span>
+  */
+  .glyph-win-sports:before {
+    content: "\f901";
+  }
+
+  /*
+  * @icon .glyph-telefonica 
+  * @markup
+  *   <span class="i-telefonica"></span>
+  */
+  .glyph-telefonica:before {
+    content: "\f902";
+  }
+
+  /*
+  * @icon .glyph-telefonica 
+  * @markup
+  *   <span class="i-telefonica"></span>
+  */
+  .glyph-after-telefonica:after {
+    content: "\f902";
+  }
+
+  /*
+  * @icon .glyph-disney
+  * @markup
+  *   <span class="i-disney"></span>
+  */
+  .glyph-disney:before {
+    content: "\f903";
+  }
+
+  /*
+  * @icon .glyph-star-channel
+  * @markup
+  *   <span class="i-star-channel"></span>
+  */
+  .glyph-star-channel:before {
+    content: "\f904";
+  }
+
+  /*
+  * @icon .glyph-netflix
+  * @markup
+  *   <span class="i-netflix"></span>
+  */
+  .glyph-netflix:before {
+    content: "\f905";
+  }
+
+  /*
+  * @icon .glyph-motorola
+  * @markup
+  *   <span class="i-motorola"></span>
+  */
+  .glyph-motorola:before {
+    content: "\f906";
+  }
+
+  /*
+  * @icon .glyph-huawei
+  * @markup
+  *   <span class="i-huawei"></span>
+  */
+  .glyph-huawei:before {
+    content: "\f907";
+  }
+
+  /*
+  * @icon .glyph-samsung
+  * @markup
+  *   <span class="i-samsung"></span>
+  */
+  .glyph-samsung:before {
+    content: "\f908";
+  }
+
+  /*
+  * @icon .glyph-xiaomi
+  * @markup
+  *   <span class="i-xiaomi"></span>
+  */
+  .glyph-xiaomi:before {
+    content: "\f909";
+  }
+
+  /*
+  * @icon .glyph-nokia
+  * @markup
+  *   <span class="i-nokia"></span>
+  */
+  .glyph-nokia:before {
+    content: "\f90a";
+  }
+
+  /*
+  * @icon .glyph-alcatel
+  * @markup
+  *   <span class="i-alcatel"></span>
+  */
+  .glyph-alcatel:before {
+    content: "\f90b";
+  }
+
+  .glyph-vivo:before {
+    content: "";
+    background-image: url(/assets/img/vivo-brand2.svg);
+    display: block;
+    width: 100%;
+    height: 15px;
+    background-size: 100% 13px;
+    background-repeat: no-repeat;
+  }
+
+  .glyph-vivo:hover:before {
+    background-image: url(/assets/img/vivo-brand-hover.svg);
+  }
+
+  .ico-xiaomi-logo:before {
+    -webkit-mask: url(../img/icon-xiaomi.svg) no-repeat 100% 100%;
+    mask: url(../img/icon-xiaomi.svg) no-repeat 100% 100%;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    background-color: #50535A;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+  }
+
+  .ico-xiaomi-logo:hover:before {
+    background-color: var(--blue);
+  }
+
+  .glyph-oppo:before {
+    content: "";
+    background-image: url(/assets/img/logo-oppo.svg);
+    display: block;
+    width: 100%;
+    height: 47px;
+    background-size: 100% 51px;
+    background-repeat: no-repeat;
+  }
+
+  .glyph-oppo:hover:before {
+    background-image: url(/assets/img/logo-oppo-hover.svg);
+  }

@@ -1,0 +1,281 @@
+/* Versión Mobile */
+.slidemenu_container {
+    box-shadow: 0px 5px 5px 8px #CCCCCC;
+    background: #ffffff;
+    z-index: 1200;
+    height: 70px;
+    width: 100%;
+    max-width: 465px;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.slidemenu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.slidemenu div {
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid #ffffff;
+}
+
+.slidemenu div:hover {
+    border-top: 5px solid #039be5;
+}
+
+.icon-atencion {
+    background-image: url(/shared/sticky/images/icon-atencion-gris.svg);
+}
+
+.icon-ventas {
+    background-image: url(/shared/sticky/images/icon-ventas-gris.svg);
+}
+
+.icon-whatsapp {
+    background-image: url(/shared/sticky/images/icon-whatsapp-gris.svg);
+}
+
+.icon-app {
+    background-image: url(/shared/sticky/images/icon-app-gris.svg);
+}
+
+.slidemenu div a .iconSticky {
+    width: 20px;
+    height: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px auto;
+}
+
+.slidemenu div a.active .icon-atencion {
+    background-image: url(/shared/sticky/images/icon-atencion-blue.svg);
+}
+
+.slidemenu div a.active .icon-ventas {
+    background-image: url(/shared/sticky/images/icon-ventas-blue.svg);
+}
+
+.slidemenu div a.active .icon-whatsapp {
+    background-image: url(/shared/sticky/images/icon-whatsapp-blue.svg);
+}
+
+.slidemenu div a.active .icon-app {
+    background-image: url(/shared/sticky/images/icon-app-blue.svg);
+}
+
+.slidemenu div a {
+    color: #aaa;
+    font-size: 11px;
+}
+
+.slidemenu div a:hover {
+    color: #039be5;
+}
+
+
+/* Versión Desktop */
+.sl-fab-container {
+    display: none !important;
+}
+
+.btn-group-fab {
+    position: fixed;
+    width: 50px;
+    height: auto;
+    right: 20px;
+    bottom: 50px;
+    z-index: 999999;
+}
+
+.btn-group-fab .bg-blue {
+    background-color: #00A9E0;
+}
+
+.btn-group-fab .bg-green {
+    background-color: #5BC500;
+}
+
+.btn-group-fab .bg-purple {
+    background-color: #8C409D;
+}
+
+.btn-group-fab .imgctl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 28px;
+    height: auto;
+}
+
+.btn-group-fab .imgctl.call {
+    width: 25px;
+}
+
+.btn-group-fab .imgctl.main {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-group-fab .btn-group-fab__content {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.btn-group-fab .btnctrl {
+    display: none;
+    position: absolute;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    bottom: 0;
+    border-radius: 50%;
+    margin-bottom: 4px;
+    width: 40px;
+    height: 40px;
+    margin: 4px auto;
+}
+
+.btn-group-fab .btnctrl:focus {
+    outline: none;
+}
+
+.btn-group-fab .btn-main {
+    width: 50px;
+    height: 50px;
+    right: 50%;
+    margin-right: -25px;
+    -webkit-box-shadow: inset 0 0 0 5px rgb(130 200 245 / 50%);
+    -moz-box-shadow: inset 0 0 0 5px rgb(130 200 245 / 50%);
+    box-shadow: inset 0 0 0 5px rgb(130 200 245 / 50%);
+    z-index: 999999;
+    border-radius: 50% 20% 50% 50% !important;
+}
+
+.btn-group-fab .btn-main::before {
+    content: 'Ayuda';
+    width: 93px;
+    background-color: rgb(51, 153, 255);
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    left: -93px;
+    top: 7px;
+    z-index: -10;
+    clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 99%, 100% 46%);
+    transition: clip-path 1s;
+}
+
+.btn-group-fab .btn-main:hover::before {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+}
+
+
+.btn-group-fab .btn-sub {
+    bottom: 0;
+    right: 50%;
+    margin-right: -20px;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 999998;
+}
+
+.btn-group-fab .btn-sub .btn-text {
+    display: none;
+    position: absolute;
+    text-align: right;
+    top: 50%;
+    left: -170px;
+    transform: translate(0, -50%);
+    width: 150px;
+    margin: 0;
+    color: #52545A;
+    font-size: 16px;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.btn-group-fab.active .btn-sub .btn-text {
+    display: block;
+    opacity: 1;
+}
+
+.btn-group-fab.active .btn-sub:nth-child(2) {
+    bottom: 60px;
+}
+
+.btn-group-fab.active .btn-sub:nth-child(3) {
+    bottom: 110px;
+}
+
+.btn-group-fab.active .btn-sub:nth-child(4) {
+    bottom: 160px;
+}
+
+.btn-group-fab.active .btn-sub:nth-child(5) {
+    bottom: 210px;
+}
+
+.btn-group-fab.active .btn-sub:nth-child(6) {
+    bottom: 260px;
+}
+
+#group-fab__overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99997;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-group-fab .btnctrl {
+        display: block;
+        cursor: pointer;
+    }
+
+    .slidemenu_container {
+        display: none;
+    }
+
+    /* .btn-group-close{
+        width: 100%;
+        color: black;
+        position: fixed;
+        display: flex;
+        z-index: 100000;
+        justify-content: flex-end;
+        padding: 0 40px;
+        margin-top: -60px;
+    } */
+
+    .btn-close{
+        color: #ffffff;
+        font-weight: 500;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        background: #00A9E0;
+        justify-content: center;
+        border-radius: 20px;
+        align-items: center;
+        margin: 0 auto;
+    }
+}

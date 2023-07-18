@@ -1,0 +1,126 @@
+.pospagoMejora .callback-sencillo .botonEnviarNormal,
+.pospagoCompra .callback-sencillo .botonEnviarNormal {
+  font-size: 16px;
+}
+
+.pospagoMejora .callback-sencillo .input-form-normal,
+.pospagoCompra .callback-sencillo .input-form-normal{
+  display: inline;
+  width: 90%;
+  height: 36px;
+  border: none;
+  font-size: 14px;
+  padding-right: 18px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.pospagoMejora .callback-sencillo .content-check,
+.pospagoCompra .callback-sencillo .content-check{
+  display: block;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.pospagoMejora .callback-content-normal,
+.pospagoCompra .callback-content-normal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.pospagoMejora .callback-content-normal .input-form,
+.pospagoCompra .callback-content-normal .input-form{
+  background-color: var(--white);
+  height: 41px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pospagoMejora .callback-content-normal .input-form,
+.pospagoCompra .callback-content-normal .input-form{
+  background: white;
+  width: 100%;
+  border-radius: 10px;
+  height: 45px;
+}
+
+.pospagoMejora .callback-sencillo .callback-box__check,
+.pospagoCompra .callback-sencillo .callback-box__check{
+  display: block !important;
+}
+
+.pospagoMejora .call-content,
+.pospagoCompra .call-content{
+  max-width: none !important;
+  height: auto !important;
+}
+
+.pospagoMejora,
+.pospagoCompra {
+  height: 274px !important;
+  background: url(/pages/persons/planes-moviles/pospago/modals/modal-cta/images/Background-Kv-plan-fijo.webp) !important;
+  color: var(--white) !important;
+  max-width: 500px !important;
+}
+
+.pospagoMejora .callback-sencillo .input-form,
+.pospagoCompra .callback-sencillo .input-form {
+  border: 1px solid #019df4;
+}
+
+.pospagoMejora .icon-smartPhone,
+.pospagoCompra .icon-smartPhone{
+  content: url(/components/callbacks/simple/images/phone.svg);
+  position: absolute;
+  width: 14px;
+  top: 24%;
+  right: 21px;
+}
+
+.pospagoMejora .buttons-container,
+.pospagoCompra .buttons-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pospagoMejora .title{
+  font-size: 35px !important;
+}
+
+.pospagoCompra .sub-title{
+  font-size: 14px !important;
+}
+
+.pospagoMejora .modal-box,
+.pospagoCompra .modal-box{
+  background-color: transparent !important;
+}
+
+.pospagoMejora .modal-box .modal-content,
+.pospagoCompra .modal-box .modal-content{
+  width: 100% !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .pospagoMejora .callback-sencillo .input-form-normal,
+  .pospagoCompra .callback-sencillo .input-form-normal{
+    font-size: 16px;
+  }
+
+  .pospagoMejora .icon-smartPhone,
+  .pospagoCompra .icon-smartPhone{
+    top: 24%;
+    right: 12%;
+  }
+
+}

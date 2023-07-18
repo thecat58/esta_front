@@ -1,0 +1,308 @@
+.section-entertainment {
+    background: url(/pages/persons/hogar/television/entertainment/assets/bg.png) center/cover no-repeat;
+  }
+  
+  .entertainment {
+    width: 100%;
+    max-width: 1200px;
+    color: #51535a;
+    padding: 30px 20px 10px;
+    margin: 0 auto;
+  }
+  
+  .section-entertainment__title,
+  .section-entertainment__descrip {
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .section-entertainment__title {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .section-entertainment__descrip {
+    font-size: 17px;
+  }
+  
+  .entertainment__box {
+    width: 90%;
+    max-width: 384px;
+    background: #FFF;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: default;
+  }
+  
+  .entertainment__box-header {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background: #00a9e0;
+    padding: 5px;
+  }
+  
+  .entertainment__box-body {
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .entertainment__box-body::before {
+    content: '';
+    width: 1px;
+    height: 80%;
+    background: #85868a;
+    display: block;
+    position: absolute;
+    left: 110px;
+    opacity: .65;
+  }
+  
+  .entertainment__box-image {
+    width: 80px;
+    margin: 0 10px;
+  }
+  
+  .entertainment__box-content {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  .entertainment__box-descrip {
+    font-size: 14px;
+  }
+  
+  .entertainment__box-price {
+    color: #00a9e0;
+    font-size: 19px;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  .entertainment__box-price span {
+    color: #86888c;
+    font-size: 12px;
+    text-decoration: line-through;
+    display: block;
+  }
+  
+  .entertainment__box-link {
+    width: 90%;
+    max-width: 160px;
+    color: #FFFFFF;
+    font-size: 14px;
+    background: #00a9e0;
+    padding: 7px;
+    border-radius: 7px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .movPlay {
+    max-width: 345px;
+    color: #51535a;
+    padding-top: 30px;
+    margin: 0 auto;
+  }
+  
+  .movPlay__container {
+    color: #FFFFFF;
+    background: #1c2b3c;
+    border-radius: 11px;
+    margin: 0 auto 30px;
+    padding: 20px 0 0 0;
+  }
+  
+  .movPlay__descrip,
+  .movPlay__features{
+    padding: 0 20px 20px;
+  }
+  
+  .movPlay__descrip {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .movPlay__features {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+  }
+  
+  .movPlay__feature-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .movPlay__feature-img {
+    margin-right: 10px;
+  }
+  
+  .movPlay__feature-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  
+  .movPlay__feature-text span {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .movPlay__container-consult {
+    background: #FFF;
+    text-align: center;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+  padding: 7px;
+  }
+  
+  .movPlay__container-consult p {
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .section-entertainment {
+        background: url(/pages/persons/hogar/television/entertainment/assets/bg-desk.png) center/cover no-repeat;
+    }
+  
+    .section-entertainment__title {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+  
+    .section-entertainment__title br {
+        display: none;
+    }
+  
+    .section-entertainment__descrip {
+        font-size: 20px;
+    }
+  
+    .entertainment__container {
+        display: flex;
+    }
+  
+    .entertainment__box {
+        width: 48%;
+        max-width: 550px;
+    }
+  
+    .entertainment__box-header {
+        font-size: 23px;
+    }
+  
+    .entertainment__box-body::before {
+        left: 130px;
+    }
+  
+    .entertainment__box-image {
+        width: auto;
+    }
+  
+    .entertainment__box-descrip {
+        font-size: 22px;
+    }
+  
+    .entertainment__box-price {
+        font-size: 30px;
+    }
+  
+    .entertainment__box-price span {
+        font-size: 20px;
+    }
+  
+    .entertainment__box-link {
+        max-width: 250px;
+        font-size: 22px;
+    }
+  
+  .movPlay{
+  max-width: 1200px;
+  }
+  
+    .movPlay__container {
+        padding: 20px 0 0 0;
+    }
+  
+    .movPlay__descrip,
+    .movPlay__features{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+  
+    .movPlay__features {
+        max-width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+  
+    .movPlay__feature-item {
+        padding: 0 20px;
+        position: relative;
+        flex: 1;
+        justify-content: center;
+    }
+  
+    .movPlay__feature-item:nth-child(2)::before,
+    .movPlay__feature-item:nth-child(2)::after {
+        content: '';
+        width: 1px;
+        height: 70%;
+        background: #FFF;
+        position: absolute;
+    }
+  
+    .movPlay__feature-item:nth-child(2)::before {
+        left: 0;
+    }
+  
+    .movPlay__feature-item:nth-child(2)::after {
+        right: 0;
+    }
+  
+    .movPlay__feature-text {
+        font-size: 18px;
+    }
+  
+    .movPlay__container-consult{
+  padding: 10px;
+  }
+    .movPlay__container-consult p {
+        font-size: 18px;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .movPlay__descrip {
+        font-size: 20px;
+    }
+    .movPlay__feature-item:first-child{
+        flex: 1.2;
+    }
+  
+  .movPlay__feature-img{
+  margin-right: 20px;
+  }
+    .movPlay__feature-text {
+        font-size: 20px;
+    }
+  
+    .movPlay__feature-text span {
+        font-size: 25px;
+    }
+  }

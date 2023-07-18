@@ -1,0 +1,309 @@
+.container_Inactividad{
+    display: none;
+    position: fixed; 
+    z-index: 10001;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal_inactivity-container{
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-align: center;
+    height: fit-content;
+    max-width: 320px;
+    background: #fefefe;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+
+.modal_inactivity-container::after{
+    content: url(/pages/persons/hogar/internet-prueba/modals/modal-inactividad/assets/speedTestMobil.png);
+    position: absolute;
+    top: 40px;
+    left: 59px;
+    width: 22px;
+}
+
+.inactivity_close,
+.inactivity_close:focus,
+.inactivity_close:active{
+    position: absolute;
+    cursor: pointer;
+    font-size: 14px;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    color: #fff;
+    font-weight: 400;
+    padding: 2px 9px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.inactivity_close:hover{
+    opacity: 1;
+}
+
+.inactivity_item1{
+    position: relative;
+    width: 322px;
+    height: 160px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(/pages/persons/hogar/internet-prueba/modals/modal-inactividad/assets/ausenciaMobil.svg);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.inactivity_item1 .inactivity_title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.inactivity_item1 .inactivity_continue{
+    font-size: 12px;
+    font-weight: bold;
+    color: #1c2b3c;
+    text-align: center;
+    padding: 2px 8px;
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.inactivity_item1 .inactivity_description{
+    text-align: center;
+    font-size: 11px;
+    max-width: 300px;
+    color: #fff;
+    margin: 10px auto;
+    font-weight: 400;
+}
+
+.inactivity_item2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: fit-content;
+    background: #fefefe;
+    padding: 15px 0px;
+    color: #1c2b3c
+}
+
+.inactivity_item2 h6{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.inactivity_item2 p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.inactivity_item2 p strong{
+    color: #5596f1;
+}
+
+/* .inactivity_item2 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c2b3c;
+    width: 260px;
+    height: 30px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 14px;
+    border: none;
+    margin: 20px auto 10px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+} */
+
+.inactivity_item2 iframe,
+.inactivity_item2 .call-content{
+    width: 100%;
+    height: 78px!important;
+    margin: 30px 0px 0px;
+}
+
+/* .inactivity_item2 input{
+    width: 250px;
+    height: 30px;
+    margin: 10px auto 0px;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #e4e4e4;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+} */
+
+.OoklaTyC{
+    font-size: 5px;
+    width: 230px;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    bottom: 11px;
+    left: 50px;
+}
+
+.speedTestLogo{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .modal_inactivity-container{
+        flex-direction: row;
+        max-width: 745px;
+        background: transparent;
+    }
+
+    .speedTestLogo{
+        display: block;
+        margin-top: 10px;
+    }
+
+    .modal_inactivity-container::after{
+        content: url(/pages/persons/hogar/internet-prueba/modals/modal-inactividad/assets/buzoDesk.svg);
+        position: absolute;
+        bottom: 28px;
+        width: 210px;
+        top: auto;
+        left: calc(18% + 10px);
+    }
+    
+    .inactivity_close,
+    .inactivity_close:focus,
+    .inactivity_close:active{
+        top: 10px;
+        right: 10px;
+        padding: 2px 9px;
+        opacity: 0.7;
+        font-weight: 600;
+        color: #5596f1;
+        border: 1px solid #5596f1;
+    }
+    
+    .inactivity_item1{
+        width: 294px;
+        height: 400px;
+        background: url(/pages/persons/hogar/internet-prueba/modals/modal-inactividad/assets/fondoDesk.svg);
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;   
+        padding-bottom: 0;
+    }
+    
+    .inactivity_item1 .inactivity_title{
+        font-size: 25px;
+        margin-right: 0px;
+    }
+    
+    .inactivity_item1 .inactivity_continue{
+        font-size: 16px;
+        margin-left: 0px;
+        padding: 2px 15px;
+    }
+    
+    .inactivity_item1 .inactivity_description{
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.2;
+        max-width: 255px;
+        margin: 5px auto 50px;
+    }
+    
+    .inactivity_item2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        height: 400px;
+        background: #fefefe;
+        padding: 15px 0px;
+        color: #1c2b3c;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    
+    .inactivity_item2 .inactivity_item2-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+    }
+
+    .inactivity_item2 h6{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .inactivity_item2 p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    .inactivity_item2 p strong{
+        color: #5596f1;
+    }
+    
+    /* .inactivity_item2 button{
+        width: 270px;
+        height: 38px;
+        font-size: 16px;
+        margin: 30px auto 10px;
+    }
+    
+    .inactivity_item2 input{
+        width: 270px;
+    } */
+
+    .OoklaTyC{
+        font-size: 6px;
+        width: 256px;
+        position: absolute;
+        bottom: 11px;
+        left: 22px;
+    }
+}

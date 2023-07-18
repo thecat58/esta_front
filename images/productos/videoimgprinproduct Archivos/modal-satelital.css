@@ -1,0 +1,316 @@
+.modal-satelital {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1050;
+    display: none;
+  }
+
+  .modal-satelital__container {
+    width: 90%;
+    max-width: 500px;
+    height: 92%;
+    padding: 10px;
+    border-radius: 20px;
+    background: white;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    position: relative
+  }
+
+  .modal-satelital__close {
+    color: #7C8388;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    padding: 7px 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .5;
+    cursor: pointer
+  }
+
+  .modal-satelital__close:hover {
+    opacity: 1
+  }
+
+  .modal-satelital__container {
+    width: 90%;
+    max-width: 500px;
+    height: 92%;
+    color: #50535a;
+    padding: 0 15px;
+    border-radius: 20px;
+    background: white;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: block;
+    overflow: hidden
+  }
+
+  .modal-satelital__header {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px 0 5px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+  }
+
+  .modal-satelital__title {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0
+  }
+
+  .modal-satelital__tablink,
+  .modal-satelital__tablink:focus,
+  .modal-satelital__tablink:active {
+    width: 46%;
+    color: #00a9e0;
+    font-size: 14px;
+    font-weight: 300;
+    background: #e8e8e8;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer
+  }
+
+  .modal-satelital__tablink.active {
+    background: #00a9e0;
+    color: #FFF
+  }
+
+  .modal-satelital__body {
+    height: 66%;
+    overflow: auto
+  }
+
+  .modal-satelital__tabcontent {
+    display: none
+  }
+
+  #satelital-zafiro {
+    display: block
+  }
+
+  .modal-satelital-mb__acc-container {
+    width: 100%;
+    max-width: 380px;
+    margin: 10px auto
+  }
+
+  .accordion-btn {
+    width: 100%;
+    background: #019af1;
+    border-radius: 10px;
+    cursor: pointer
+  }
+
+  .accordion-btn.active {
+    border-radius: 10px 10px 0 0
+  }
+
+  .accordion__container {
+    padding: 15px 40px 15px 20px;
+    display: flex;
+    align-items: center;
+    position: relative
+  }
+
+  .accordion__icon {
+    margin-right: 15px
+  }
+
+  .accordion__icon img {
+    width: 27px
+  }
+
+  .accordion__title {
+    color: #FFF;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: .9;
+    margin: 0
+  }
+
+  .accordion__arrow {
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 16px
+  }
+
+  .accordion__arrow img {
+    width: 20px;
+    transform: rotate(0deg)
+  }
+
+  .accordion-btn.active .accordion__arrow img {
+    transform: rotate(180deg)
+  }
+
+  .panel {
+    background: #FFF;
+    border: 1px solid #00a9e0;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    display: none
+  }
+
+  .panel.active {
+    display: block
+  }
+
+  .panel__container {
+    padding: 30px 0
+  }
+
+  .modal-satelital-mb__channel-image {
+    width: 85%;
+    max-width: max-content;
+    margin: 0 auto;
+    display: block
+  }
+
+  .modal-satelital-desk {
+    display: none
+  }
+
+  .st0 {
+    fill: #ffffff;
+  }
+
+  .text-buttons-satelital{
+    font-size: 12px;
+    margin-top: -10px;
+    color:#353535;
+    font-weight: 500;
+  }
+
+  @media only screen and (min-width: 456px) {
+
+    .modal-satelital__tablink,
+    .modal-satelital__tablink:focus,
+    .modal-satelital__tablink:active {
+      width: 180px;
+      font-size: 18px
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .modal-satelital__container {
+      max-width: max-content;
+      height: fit-content;
+      border-radius: 10px;
+      padding-bottom: 20px;
+      margin-top: 50px
+    }
+
+    .modal-satelital__container .modal-satelital__close {
+      color: #00a9e0
+    }
+
+    .modal-satelital-mb {
+      display: none
+    }
+
+    .modal-satelital__title {
+      font-size: 25px
+    }
+
+    .modal-satelital-desk {
+      display: block;
+      border-radius: 20px;
+      border: 1px solid #00a9e0;
+      border-top: none;
+      overflow: hidden
+    }
+
+    .modal-satelital-desk__tabs {
+      width: 100%;
+      overflow: auto;
+      background: #00a9e0
+    }
+
+    .modal-satelital-desk__tabs-container {
+      width: max-content;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto
+    }
+
+    .modal-satelital-desk__tab {
+      color: #FFF;
+      background: #00a9e0;
+      padding: 7px 15px;
+      border: none;
+      cursor: pointer
+    }
+
+    .modal-satelital-desk__tab:hover {
+      opacity: .85
+    }
+
+    .modal-satelital-desk__tab.active {
+      background: #e8e7e7;
+      color: #353535
+    }
+
+    .modal-satelital-desk__icon svg {
+      width: 20px;
+      fill: #FFF;
+      margin: 0 auto 2px;
+      display: block
+    }
+
+    .modal-satelital-desk__tab.active .modal-satelital-desk__icon svg {
+      fill: #919191
+    }
+
+    .modal-satelital-desk__title {
+      margin: 0;
+      font-size: 16px
+    }
+
+    .modal-satelital-desk__channel {
+      padding: 15px 10px
+    }
+
+    .modal-satelital-desk__channel-image {
+      margin: auto;
+      display: block
+    }
+
+    .modal-satelital-desk__tabcontent {
+      display: none
+    }
+
+    .modal-satelital-desk__tabcontent#parrilla-zafiro__deportes,
+    .modal-satelital-desk__tabcontent#parrilla-zafiro-plus__deportes,
+    .modal-satelital-desk__tabcontent#parrilla-zafiro-total__deportes,
+    .modal-satelital-desk__tabcontent#parrilla-diamante__deportes,
+    .modal-satelital-desk__tabcontent#parrilla-diamante-plus__deportes,
+    .modal-satelital-desk__tabcontent#parrilla-diamante-total__deportes,
+    .modal-satelital-desk__tabcontent#parrilla-adultos-total__total,
+    .modal-satelital-desk__tabcontent#parrilla-adultos-plus__plus {
+      display: block
+    }
+
+    .modal-satelital-desk__tabcontent-ctn {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+  }
