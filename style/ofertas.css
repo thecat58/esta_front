@@ -128,6 +128,13 @@ p {
     box-shadow: 0 5px black (0, 0, 0, .3);
     margin: 20px;
 }
+.box-container img:hover {
+    transform: translateY(-5px); /* Desplaza la imagen hacia arriba al pasar el cursor sobre ella */
+    /* Agrega cualquier otra propiedad adicional que desees para personalizar el efecto */
+    /* por ejemplo, puedes agregar una sombra o cambiar el brillo: */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    filter: brightness(90%);
+  }
 
 
 
