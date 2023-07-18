@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
-    font-family: 'Poppins', sans-serif; /*tipo de letra debes importarlo*/
+    font-family: 'Poppins', sans-serif;
+    /*tipo de letra debes importarlo*/
 }
 
 body {
@@ -21,22 +23,26 @@ body {
     background: #232424;
     font-weight: 700;
 }
+
 li {
     list-style: none;
 }
+
 ul {
     display: flex;
 }
+
 .navbar {
     display: flex;
     margin-right: 10px;
 }
 
-.logo  img{
+.logo img {
     margin-left: 30px;
-    height: 108px; 
+    height: 108px;
     width: 154.34px;
 }
+
 .logo a {
     text-decoration: none;
     color: floralwhite;
@@ -77,15 +83,7 @@ p {
 }
 
 /* aquei las que giran  */
-.content-sau {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
-    background: papayawhip;
-}
+
 
 .sau {
     padding: 100px;
@@ -101,12 +99,9 @@ p {
     margin: 0 80px;
 }
 
-.box-container .box1,
-.box-container .box2,
-.box-container .box3 {
+.box {
     height: 270px;
     width: 270px;
-    background-image: url('/images/inicio/taller1.jpg');
     background-size: cover;
     text-align: center;
     border-radius: 20px;
@@ -117,23 +112,16 @@ p {
     transition: transform 1.9s;
 }
 
-.box-container .box1:hover,
-.box-container .box2:hover,
-.box-container .box3:hover {
+.box:hover {
     transform: rotateY(180deg);
 }
 
-.box-container .box1:after,
-.box-container .box2:after,
-.box-container .box3:after {
+.box:after {
     content: "";
     position: absolute;
     height: 80%;
     width: 80%;
     backface-visibility: hidden;
-}
-
-.box-container .box1:after {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
     transform: rotateY(180deg);
@@ -143,163 +131,62 @@ p {
     line-height: 1.5;
     z-index: 1;
     text-align: left;
-    content: "Taller de Fotografía Creativa: Descubre tu lado artístico a través de la fotografía. Aprende técnicas y trucos para capturar imágenes impactantes, jugar con la luz y la composición, y expresar tu visión personal a través de la fotografía.";
-
+    /* Retrieve the data-background-image value and use it as the background image */
+    background-image: url(attr)(data-background-image);
 }
 
-.box-container .box2:after {
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 20px;
-    transform: rotateY(180deg);
-    color: white;
-    padding: 20px;
-    font-size: 14px;
-    line-height: 1.5;
-    z-index: 1;
-    text-align: left;
-    content: "Taller de Fotografía Creativa: Descubre tu lado artístico a través de la fotografía. Aprende técnicas y trucos para capturar imágenes impactantes, jugar con la luz y la composición, y expresar tu visión personal a través de la fotografía.";
-}
-
-
-.box-container .box3:after {
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 20px;
-    transform: rotateY(180deg);
-    color: white;
-    padding: 20px;
-    font-size: 14px;
-    line-height: 1.5;
-    z-index: 1;
-    text-align: left;
-    content: "Taller de Fotografía Creativa: Descubre tu lado artístico a través de la fotografía. Aprende técnicas y trucos para capturar imágenes impactantes, jugar con la luz y la composición, y expresar tu visión personal a través de la fotografía.";
-}
-
-.box-container .box2 {
-    height: 270px;
-    width: 270px;
-    background-image: url('/images/productos/imgtaller.jpg');
-    background-size: cover;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 5px black (0, 0, 0, 0.3);
-    margin: 20px;
-}
-
-.box-container .box3 img {
-    height: 270px;
-    width: 270px;
-    background-image: url('/images/inicio/taller3.jpg');
-    background-size: cover;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 5px black (0, 0, 0, 0.3);
-    margin: 20px;
-}
-
-
-.box4 img {
-    height: 270px;
-    width: 270px;
-    background-size: cover;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 5px black (0, 0, 0, 0.3);
-    margin: 20px;
-}
-
-.box-container .box i {
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 50%;
-    color: rgb(235, 224, 224);
-    background: pink;
-    font-size: 25px;
-    margin: 10px 0;
-}
-
-.box-container .box h3 {
+/* Additional styles for headings and paragraphs inside the boxes */
+.box h4 {
     font-size: 20px;
     color: palevioletred;
 }
 
-.box-container .box p {
+.box p {
     padding: 0 15px;
     font-size: 16px;
 }
+
 /* las que giran */
 /* ........................................................................ */
 .banner-container {
     width: 100%;
     overflow: hidden;
-  }
-  
-  .banner {
+}
+
+.banner {
     display: flex;
     animation: desplazar 20s linear infinite;
-  }
-  
-  .banner img {
+}
+
+.banner img {
     width: 60%;
     height: auto;
     transition: transform 0.8s ease;
-  }
-  
-  .banner img:hover {
+}
+
+.banner img:hover {
     transform: translateX(0);
-  }
-  
-  @keyframes desplazar {
+}
+
+@keyframes desplazar {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     80% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
 
-    
+
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
-  
+}
+
 /* ........................................................................ */
-.box1 img{
-    height: 270px;
-    width: 270px;
-    
-    background-size: cover;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 5px black (0,0,0, .3);
-    margin: 20px;
-}
-
-.box-container .box2 {
-    height: 270px;
-    width: 270px;
-    background-image: url(/pagina/web/telefonia/images/productos/img4.jpg);
-    background-size: cover;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 5px black (0,0,0, .3);
-    margin: 20px;
-}
-
-.box-container .box3 {
-    height: 270px;
-    width: 270px;
-    background-image: url(/pagina/web/telefonia/images/productos/imgbici.png);
-    background-size: cover;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 5px black (0,0,0, .3);
-    margin: 20px;
-}
 
 .price {
-    
+
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
@@ -338,34 +225,40 @@ article.contain {
         margin-bottom: 0px;
         font-size: 40px;
     }
+
     .sau {
         height: 80vh;
         padding: 50px 0;
     }
+
     .about {
         height: 80vh;
         padding: 50px 0;
     }
+
     .footer-section {
         display: flex;
         flex-direction: column;
     }
+
     .f-enlaces {
         display: none;
     }
+
     .navbar {
         display: none;
     }
 }
+
 /*---------------------------Aquí debajo va el FOOTER-----------------------*/
 
-footer{
+footer {
     grid-area: footer;
     width: 100%;
     padding: 50px 0px;
     background-image: url(../Images/background-footer.svg);
     background-size: cover;
-    
+
     /*background-color: #d0f0f8;
     -webkit-mask-image: url("../Images/background-footer.svg");
     mask-image: url("../Images/background-footer.svg");
@@ -373,28 +266,28 @@ footer{
     mask-size: cover;*/
 }
 
-.container__footer{
+.container__footer {
     display: flex;
-    
+
     justify-content: space-evenly;
     max-width: 100%;
     margin: auto;
     height: 100%;
-    
+
 }
 
-.box__footer{
+.box__footer {
     display: flex;
     flex-direction: column;
     padding: 40px;
-    
+
 }
 
-.box__footer .logo img{
+.box__footer .logo img {
     width: 180px;
 }
 
-.box__footer .terms{
+.box__footer .terms {
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
@@ -402,47 +295,49 @@ footer{
     font-size: 18px;
 }
 
-.box__footer h2{
+.box__footer h2 {
     margin-bottom: 30px;
     color: #343434;
     font-weight: 700;
 }
 
-.box__footer a{
+.box__footer a {
     margin-top: 10px;
     color: #7a7a7a;
     font-weight: 600;
 }
 
-.box__footer a:hover{
+.box__footer a:hover {
     opacity: 0.8;
 }
 
-.box__footer a .fab{
+.box__footer a .fab {
     font-size: 20px;
 }
 
-.box__copyright{
+.box__copyright {
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 40px;
 }
 
-.box__copyright p{
+.box__copyright p {
     margin-top: 20px;
     color: #7a7a7a;
 }
 
-.box__copyright hr{
+.box__copyright hr {
     border: none;
     height: 1px;
     background-color: #7a7a7a;
 }
-.box__footer p{
+
+.box__footer p {
     color: #7a7a7a;
 }
-.box__footer i{
+
+.box__footer i {
     color: #7a7a7a;
 }
 
