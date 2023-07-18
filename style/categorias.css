@@ -89,7 +89,6 @@ p {
 
 /* aquei las que giran  */
 
-
 .sau {
     padding: 100px;
     background: white;
@@ -136,20 +135,22 @@ p {
     line-height: 1.5;
     z-index: 1;
     text-align: left;
-    /* Retrieve the data-background-image value and use it as the background image */
     background-image: url(attr)(data-background-image);
+    content: "Los talleres automotrices son establecimientos especializados en brindar servicios de mantenimiento, reparación y diagnóstico de vehículos automotores. Estos talleres juegan un papel fundamental en la industria automotriz, ya que permiten mantener y prolongar la vida útil de los automóviles, asegurando su correcto funcionamiento y seguridad en las carreteras.";
+
 }
 
 /* Additional styles for headings and paragraphs inside the boxes */
 .box h4 {
     font-size: 20px;
-    color: palevioletred;
+    color: rgb(255, 255, 255);
 }
 
 .box p {
     padding: 0 15px;
     font-size: 16px;
 }
+
 
 /* las que giran */
 /* ........................................................................ */
@@ -263,12 +264,6 @@ footer {
     padding: 50px 0px;
     background-image: url(../Images/background-footer.svg);
     background-size: cover;
-
-    /*background-color: #d0f0f8;
-    -webkit-mask-image: url("../Images/background-footer.svg");
-    mask-image: url("../Images/background-footer.svg");
-    -webkit-mask-size: cover;
-    mask-size: cover;*/
 }
 
 .container__footer {
