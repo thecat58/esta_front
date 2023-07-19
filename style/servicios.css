@@ -94,6 +94,7 @@ li {
 .tittle {
     margin-bottom: 40px;
     font-size: 60px;
+    border-radius:10%;
     font-weight: 600;
     text-transform: uppercase;
     color: rgb(0, 0, 0);

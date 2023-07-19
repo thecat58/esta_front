@@ -116,6 +116,7 @@ p {
     flex-wrap: wrap;
     text-align: center;
     background-color: white;
+    flex-direction: column;
 }
 
 .box1 img,
@@ -149,11 +150,11 @@ footer{
     background-image: url(../Images/background-footer.svg);
     background-size: cover;
     
-    /*background-color: #d0f0f8;
-    -webkit-mask-image: url("../Images/background-footer.svg");
+    background-color: black;
+    /* -webkit-mask-image: url("../Images/background-footer.svg");
     mask-image: url("../Images/background-footer.svg");
     -webkit-mask-size: cover;
-    mask-size: cover;*/
+    mask-size: cover;*/ 
 }
 
 .container__footer{
