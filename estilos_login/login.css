@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(/images/estyleslogin/fondoLogin.jpg) no-repeat center top;
+    background: url(/images/estyleslogin/fondo\ login.jpg) no-repeat center top;
     background-size: cover; /**/
     font-family: sans-serif;
     height: 100vh;
@@ -36,7 +36,9 @@ body{
     padding: 0 0 20px;
     text-align: center;
     font-size: 25px;
+    color: black;
 }
+
 .login-box label{
     margin: 0;
     padding: 0;
@@ -100,7 +102,7 @@ ion-icon[name="mail-unread-outline"]{
     background-color: rgb(24, 37, 97);
     display: block;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 700px;
